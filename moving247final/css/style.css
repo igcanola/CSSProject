@@ -1,0 +1,158 @@
+#logo {
+  width: 30px; 
+  height: auto;
+  margin-right: 5px; 
+  padding: 10px;
+}
+#companyname {
+  text-decoration: none;
+  color: rgb(77, 69, 69); 
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  font-size: 25px;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-image: url('../img/toronto_back.jpg');
+  background-repeat: no-repeat;
+  background-size: 210vh;
+  background-position: center;
+  color: rgb(245, 236, 236);
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px;
+  height: 80vh;
+}
+
+header h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+#mainbox {
+  text-align: center;
+}
+
+.myLink{
+  position: relative;
+  background-color: 0 0;
+  height: 40vh;
+  width: 130vh;
+  
+}
+
+#toronto {
+  max-width: 100%; 
+  height: auto;
+}
+
+main {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.reservation-form {
+  margin-top: 20px;
+}
+
+.buttons {
+  background-color: #A3B4C8;
+  text-align: center;
+  display: flex;
+  justify-content: center; 
+  border-collapse:separate;
+  border-spacing: 10;
+  border:solid white 1px;
+  border-radius:10px;
+  width: 98%; 
+  height: 55px;
+}
+.baritem {
+  padding: 10px 20px;
+  background-color: #555;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px; 
+}
+
+.baritem:hover {
+  background-color: #777;
+}
+
+button {
+  padding: 0;
+  font-family: "Red Hat Display",sans-serif;
+  font-size: inherit;
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+
+.button.dark-gray {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 0.625rem 1.375rem;
+  border-radius: 100vh;
+
+  cursor: pointer;
+  text-transform: none;
+  font-weight: 700;
+  line-height: 1.2;
+  border-width: 2px;
+  border-style: solid;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.button.dark-gray:hover {
+  position: relative;
+  background-color: #070707;
+
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.7);
+    opacity: initial;
+    padding: 1rem 0 0.25rem;
+    outline: 0;
+    vertical-align: baseline;
+    border-collapse:separate;
+    border-spacing: 10;
+    border:solid whitesmoke 0px;
+    border-radius:10px;
+    -moz-border-radius:10px;
+    -webkit-border-radius: 5px;
+}
+
+.container {
+    justify-content: center;
+    align-items: center;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: #333;
+  color: #fff;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}

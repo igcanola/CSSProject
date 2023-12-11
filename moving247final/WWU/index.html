@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Forms</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img id="logo" src="GoTruck.png" alt="logo">
+        <ul>
+            <a href="../index.html"><li class="menu">Home</li></a>
+            <a href="www.google.com"><li class="menu">Programs</li></a>
+            <a href="www.google.com"><li class="menu">Contact Us</li></a>
+            <a href="www.google.com"><li class="menu">Help</li></a>
+        </ul>
+    </header>
+    <main>
+        <h2 id="text1">Do you want to be part of our team? </h2>
+        <p id="paragraph1">Fill out this form and our recruitment team will contact you ASAP</p>
+    <form action="https://example.com/submit_form" target="_blank" autocomplete="on" method="get">
+        <fieldset>
+            <legend>Application Form</form>...</legend>
+            <div>
+                <label>Username</label>
+                <input type="text" id="Username" name="Username"placeholder="Your name" required autofocus>
+            </div>
+
+            <div>
+                <label>Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter password" required>
+            </div>
+            
+            <div>
+                <label>Email</label>
+                <input type="email" id="email" name="email" placeholder="youremail@email.com" required>
+            </div>
+
+           
+            <p>Please select your Genre:</p>
+            <div id="radio">
+                <input type="radio" id="radiobutton" name="radiobutton">
+                <label for="radiobutton">Male</label>
+                <input type="radio" id="radiobutton" name="radiobutton">
+                <label for="radiobutton">Female</label>
+            </div>
+            
+            <div id="file">
+                <p>Choose a profile picture:</p>
+                <input type="file" id="file" name="file">
+            </div>
+           
+            <div id="birthday">
+                <p>Birthday:</p>
+                <input type="date" id="date" name="date">                
+            </div>
+
+            <div id="range">
+                <label for="range">Satisfaction Level (Between 0 - 10):</label>
+                <input type="range" id="range" name="range" min="0" max="10" value="5">
+            </div>
+
+
+            <div>
+                <input type="submit" id="submit" name="submit" value="Submit">
+            </div>
+            
+
+    </fieldset>
+    </form>
+</main>
+<footer>
+    <small>Copyright 2023 GoTruck</small>
+</footer>
+</body>
+</html>

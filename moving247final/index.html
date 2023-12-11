@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GOTruck Reservation | Toronto</title>
+  <link href="./css/style.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lovers+Quarrel&family=Nosifer&family=Raleway:wght@200&family=Sedgwick+Ave+Display&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<div>
+  <a id="companyname" href="index.html"><img id="logo" src="./img/GoTruckSmallGray.png" alt="logo"><b><em>GO</em> Truck</a>
+</div>
+
+  <!-- Header -->
+<header>
+  <div id="mainbox">
+    
+    <!-- <img id="toronto " src="toronto.jpg" alt="torontoimage" width="1300px" height="700px"> -->
+
+
+
+    <!-- Tabs -->
+    <div class="container" tabindex="0" role="tabpanel">
+      <section class="buttons">
+        <div><button style="background-color: #0077B6;" class="baritem" onclick="openLink(event,'moving');">Moving</button></div>
+        <div><button style="background-color: #022e51;" class="baritem" onclick="openLink(event,'Transporting');">Transporting Objects</button></div>
+        <div><button style="background-color: #023E8A;" class="baritem" onclick="openLink(event,'Commuting');">Commuting</button></div>
+      </section>
+
+    <div id="moving" class="myLink" style="background-color:#0077B6; ">
+      <h3>Cheapest Service in Toronto and surrounder</h3>
+      <div>
+        <div>
+          <label>Address From: </label>
+          <input type="text" placeholder="Departing from">
+        </div>
+
+        <div>
+          <label>Address To: </label>
+          <input type="inputtext" placeholder="Arriving at">
+        </div>
+
+        <div>
+          <label for="date">Date of Moving: </label>
+          <input type="date" id="date" name="date">
+        </div>
+      
+        <h3>How many people do you require for your moving?</h3>
+
+        <input list="people" name="people">
+        <datalist id="people">
+          <option value="0"></option>
+          <option value="1"></option>
+          <option value="2"></option>
+          <option value="3"></option>
+          <option value="4"></option>
+        </datalist>
+      </div>
+    </div>
+
+    <div id="Transporting" class="myLink" style="background-color: #022e51">
+      <h3>Cheapest Transportation Services in Toronto and Surrounding Areas</h3>
+      <div>
+        <div>
+        <label> Address From</label>
+        <input type="text" placeholder="Departing from">
+        </div>
+
+        <div>
+          <label>Address To</label>
+          <input type="text" placeholder="Arriving at">
+        </div>
+
+        <div>
+          <label>Describe the object(s) to transport:</label>
+          <input type="textarea" placeholder="e.g.: Stove,bed, couch, etc.">
+        </div>
+      </div>
+    </div>
+
+    <div id="Commuting" class="myLink" style="background-color: #023E8A;">
+      <h3>Commuting always available in Toronto and Surrounding Areas</h3>
+      <div>
+        <label>Address From</label>
+        <input type="text" placeholder="Departing from">
+      </div>
+
+      <div>
+        <label>Address To</label>
+        <input type="text" placeholder="Arriving at">
+      </div>
+
+      <div>
+        <label>Date of Moving</label>
+        <input type="date" id="date" name="date">
+      </div>
+      <h3>How many people?</h3>
+
+        <input list="people" name="people">
+        <datalist id="people">
+          <option value="0"></option>
+          <option value="1"></option>
+          <option value="2"></option>
+          <option value="3"></option>
+          <option value="4"></option>
+        </datalist>
+    </div> 
+    <div>
+      <p><button class="button dark-gray" type="submit" onclick="redirect()">Submit</button></p>
+      <script type="text/javascript">
+        function redirect()
+        {
+          window.location.href="page.html";
+        }
+        </script>
+    </div>
+</div>
+</div>
+
+</header>
+<footer>
+  <p>&copy; 2023 GOTruck Reservation | Toronto</p>
+</footer>
+
+<script>
+  function openLink(evt, linkName) {
+    var i, x;
+    x = document.getElementsByClassName("myLink");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    document.getElementById(linkName).style.display = "block";
+  }
+  // Click on the first baritem on load
+  document.getElementsByClassName("baritem")[0].click();
+  </script>
+
+</body>
+</html>
