@@ -8,23 +8,31 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lovers+Quarrel&family=Nosifer&family=Raleway:wght@200&family=Sedgwick+Ave+Display&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,300;1,100&family=Jost:ital,wght@1,200&family=Playpen+Sans:wght@300;600&family=Roboto:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
 </head>
 
 <body>
-<div>
-  <a id="companyname" href="index.html"><img id="logo" src="./img/GoTruckSmallGray.png" alt="logo"><b><em>GO</em> Truck</a>
-</div>
+  <header>
+    <nav>
+        <section class="container nav">
+            <div class="logo">
+                <img src="img/11.png" alt="">
+            </div>
+            <div class="enlaces-header">
+                <a href="index.html">Home</a>
+                <a href="aboutpage.html">About</a>
+                <a href="Product.html">Product</a>
+                <a href="#">Contact</a>
+           </div>
+        </section>
+    </nav>
+</header>
 
-  <!-- Header -->
-<header>
+<section class="projects">
   <div id="mainbox">
-    
-    <!-- <img id="toronto " src="toronto.jpg" alt="torontoimage" width="1300px" height="700px"> -->
-
-
 
     <!-- Tabs -->
-    <div class="container" tabindex="0" role="tabpanel">
+    <div class="container2" tabindex="0" role="tabpanel">
       <section class="buttons">
         <div><button style="background-color: #0077B6;" class="baritem" onclick="openLink(event,'moving');">Moving</button></div>
         <div><button style="background-color: #022e51;" class="baritem" onclick="openLink(event,'Transporting');">Transporting Objects</button></div>
@@ -121,9 +129,31 @@
 </div>
 </div>
 
-</header>
+</section>
 <footer>
-  <p>&copy; 2023 GOTruck Reservation | Toronto</p>
+  <div class="partFooter">
+      <img src="img/11.png" alt="">
+  </div>
+  <div class="partFooter">
+      <h4>Services</h4>
+      <a href="index.html">Moving</a>
+      <a href="index.html">Transporting Objects</a>
+      <a href="index.html">Commuting</a>
+  </div>
+  <div class="partFooter">
+      <h4>About</h4>
+      <a href="aboutpage.html">About us</a>
+      <a href="Product.html">Product</a>
+  </div>
+  <div class="partFooter">
+      <h4>Social Media</h4>
+      <div class="social-media">
+              <i class="fab fa-facebook-f"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-instagram"></i>
+              <i class="fab fa-youtube"></i>
+      </div>
+  </div>
 </footer>
 
 <script>
@@ -139,5 +169,8 @@
   document.getElementsByClassName("baritem")[0].click();
   </script>
 
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://kit.fontawesome.com/c15b744a04.js" crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
